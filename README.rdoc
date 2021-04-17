@@ -1,5 +1,6 @@
 = bigid_bgcheck
 
+{<img src="https://travis-ci.com/Quasar-Flash/bigid-bgcheck-ruby.svg?branch=master" alt="Build Status" />}[https://travis-ci.com/Quasar-Flash/bigid-bgcheck-ruby]
 {<img src="https://badge.fury.io/rb/bigid_bgcheck.svg" alt="Gem Version" />}[https://badge.fury.io/rb/bigid_bgcheck]
 
 == Contributing to bigid_bgcheck
