@@ -4,9 +4,6 @@ rvm:
   - 2.7.3
   - 2.6.7
   - 2.5.9
-  - jruby-19mode
-  - rbx-19mode
-  - ruby-head
 notifications:
   recipients:
     - danilo.carolino@qflash.com.br
