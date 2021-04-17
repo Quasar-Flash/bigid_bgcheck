@@ -1,0 +1,12 @@
+en:
+  errors:
+    bigid:
+      bgcheck:
+        bad_request_error: The request body or format is invalid
+        document_not_supported_error: The document type is not supported
+        internal_error: An internal error on the BigId server ocurred
+        invalid_document_value_error: The document value is invalid
+        invalid_credentials_error: The credentials informed are invalid
+        no_info_error: No informations available
+        not_permission_error: Action not allowed
+        server_error: An internal server error ocurred

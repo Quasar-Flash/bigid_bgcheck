@@ -1,0 +1,12 @@
+'pt-BR':
+  errors:
+    bigid:
+      bgcheck:
+        bad_request_error: O corpo ou formato da requisição é inválido
+        document_not_supported_error: O tipo de documento é inválido
+        internal_error: Ocorreu um erro ao verificar a pessoa no BigId
+        invalid_document_value_error: O valor do documento é inválido
+        invalid_credentials_error: As credenciais informadas são inválidas
+        no_info_error: Sem informações disponíveis
+        not_permission_error: Ação não permitida
+        server_error: Ocorreu um erro inesperado no servidor
