@@ -4,12 +4,6 @@ BigId Background Check's Library for Ruby
 [![Gem Version](https://badge.fury.io/rb/bigid_bgcheck.svg)](https://badge.fury.io/rb/bigid_bgcheck)
 [![Build Status](https://travis-ci.com/Quasar-Flash/bigid-bgcheck-ruby.svg?branch=master)](https://travis-ci.com/Quasar-Flash/bigid-bgcheck-ruby)
 
-Simple, efficient background processing for Ruby.
-
-Sidekiq uses threads to handle many jobs at the same time in the
-same process.  It does not require Rails but will integrate tightly with
-Rails to make background processing dead simple.
-
 Dev Requirements
 -----------------
 
