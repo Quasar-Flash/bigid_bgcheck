@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Bigid
   module Bgcheck
     module Auth
@@ -8,8 +10,8 @@ module Bigid
 
         def default_headers
           {
-            'Content-Type': 'application/json',
-            'Accept': 'application/json'
+            'Content-Type': "application/json",
+            'Accept': "application/json"
           }
         end
       end

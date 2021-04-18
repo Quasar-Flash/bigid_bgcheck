@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Bigid
   module Bgcheck
     class BaseError < StandardError
@@ -11,12 +13,10 @@ module Bigid
         I18n.t("errors.#{underscore(name)}")
       end
 
-      protected
-
       def self.underscore(str)
-        str.gsub(/::/, '.')
-           .gsub(/([A-Z]+)([A-Z][a-z])/,'\1_\2')
-           .gsub(/([a-z\d])([A-Z])/,'\1_\2')
+        str.gsub(/::/, ".")
+           .gsub(/([A-Z]+)([A-Z][a-z])/, '\1_\2')
+           .gsub(/([a-z\d])([A-Z])/, '\1_\2')
            .tr("-", "_")
            .downcase
       end

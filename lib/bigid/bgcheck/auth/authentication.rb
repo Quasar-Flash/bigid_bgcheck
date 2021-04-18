@@ -1,19 +1,21 @@
+# frozen_string_literal: true
+
 module Bigid
   module Bgcheck
     module Auth
       class Authentication
         def initialize(connection: Connection.new,
-                      username: Bigid::Bgcheck.configuration&.username,
-                      password: Bigid::Bgcheck.configuration&.password,
-                      token_expiration_time_in_seconds: Bigid::Bgcheck::AUTH_ENDPOINT)
+                       username: Bigid::Bgcheck.configuration.username,
+                       password: Bigid::Bgcheck.configuration.password,
+                       token_expiration_time_in_seconds: Bigid::Bgcheck::AUTH_ENDPOINT)
           @connection = connection
           @token_expiration_time_in_seconds = Bigid::Bgcheck::TOKEN_EXPIRATION
-          @username = username ? username : ENV['BIGID_USERNAME']
-          @password = password ? password : ENV['BIGID_PASSWORD']
+          @username = username
+          @password = password
         end
 
         def login
-          res = @connection.post(url: 'Generate', body: login_body)
+          res = @connection.post(url: "Generate", body: login_body)
 
           return res if res.status == 200
 
@@ -23,14 +25,13 @@ module Bigid
         end
 
         private
-
-        def login_body
-          {
-            login: @username,
-            password: @password,
-            expires: @token_expiration_time_in_seconds.to_i
-          }.to_json
-        end
+          def login_body
+            {
+              login: @username,
+              password: @password,
+              expires: @token_expiration_time_in_seconds.to_i
+            }.to_json
+          end
       end
     end
   end

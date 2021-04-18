@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module Bigid
   module Bgcheck
     # When updating version, keep in mind Semantic Versioning http://semver.org/
