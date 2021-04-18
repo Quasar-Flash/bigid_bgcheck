@@ -1,6 +1,11 @@
 'pt-BR':
   errors:
     bigid:
+      auth:
+        authentication_error: Ocorreu um erro durante a autenticação
+        bad_request_error: O corpo ou formato da requisição é inválido
+        invalid_credentials_error: As credenciais informadas são inválidas
+        server_error: Ocorreu um erro inesperado no servidor
       bgcheck:
         bad_request_error: O corpo ou formato da requisição é inválido
         document_not_supported_error: O tipo de documento é inválido

@@ -1,5 +1,9 @@
 # CHANGELOG for bigid_bgcheck
 
+## v0.1.2
+
+* Move auth service to an external package
+
 ## v0.1.1
 
 * Fix a problem with the credentials when its get by the env variables

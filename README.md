@@ -4,11 +4,16 @@ BigId Background Check's Library for Ruby
 [![Gem Version](https://badge.fury.io/rb/bigid_bgcheck.svg)](https://badge.fury.io/rb/bigid_bgcheck)
 [![Build Status](https://travis-ci.com/Quasar-Flash/bigid-bgcheck-ruby.svg?branch=master)](https://travis-ci.com/Quasar-Flash/bigid-bgcheck-ruby)
 
-Dev Requirements
+Requirements
 -----------------
 
 - Ruby: Any version
 - Bundler
+
+Included Modules
+-----------------
+
+- [bigid-auth-ruby](https://github.com/Quasar-Flash/bigid-auth-ruby) - BigID API authentication module
 
 Global Installation
 -----------------
@@ -31,10 +36,10 @@ Setting the BigID credentials
 Setting the BigID credentials - Rails Project
 -----------------
 
-Create the config/initializers/bigid_bgcheck.rb file and define:
+Create the config/initializers/bigid.rb file and define:
 
     # Set the env variables
-    Bigid::Bgcheck.configure do |config|
+    Bigid.configure do |config|
         config.username = 'your_username'
         config.password = 'your_password'
     end
