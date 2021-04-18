@@ -2,7 +2,7 @@
 
 module Bigid
   module Bgcheck
-    class Request < Bigid::Bgcheck::Auth::AuthenticatedResource
+    class Request < Bigid::Auth::AuthenticatedResource
       def call(document:, document_type:, group:)
         res = @connection.post(url: Bigid::Bgcheck::SRV_ENDPOINT,
                                body: payload(document, document_type, group).to_json)
@@ -25,7 +25,7 @@ module Bigid
         end
 
         def payload(document, document_type, group, parameters = {})
-          login = Bigid::Bgcheck.configuration.username
+          login = Bigid.configuration.username
           document_type = document_type.upcase.strip
 
           raise Bigid::Bgcheck::DocumentNotSupportedError unless DocType.valid?(document_type)

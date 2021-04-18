@@ -9,6 +9,6 @@ module Bigid
     # Major - Incremented for incompatible changes with previous release (or big enough new features)
     # Minor - Incremented for new backwards-compatible features + deprecations
     # Patch - Incremented for backwards-compatible bug fixes
-    VERSION = "0.1.1"
+    VERSION = "0.1.2"
   end
 end
