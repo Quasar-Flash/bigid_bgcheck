@@ -1,5 +1,9 @@
 # CHANGELOG for bigid_bgcheck
 
+## v0.1.3
+
+* Fix a problem with the locale initialization in Rails projects
+
 ## v0.1.2
 
 * Move auth service to an external package

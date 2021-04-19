@@ -12,13 +12,17 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/Quasar-Flash/bigid-bgcheck-ruby"
   s.summary     = "Bigid Background Check Library"
   s.description = "A library to use BigData Corps background check features"
-
+  s.required_ruby_version = ">= 2.5"
   s.files = Dir["{lib}/**/*"] + ["LICENSE.txt", "Rakefile", "README.md", "CHANGELOG.md"]
   s.test_files = Dir["spec/**/*"]
   s.license = "MIT"
 
-  s.add_dependency             "bigid_auth", "~> 0.1.0", ">= 0.1"
-  s.add_dependency             "faraday", "~> 1.4.0", ">= 1.0"
+  s.metadata["changelog_uri"] = "https://github.com/Quasar-Flash/bigid-bgcheck-ruby/blob/master/CHANGELOG.md"
+  s.metadata["source_code_uri"] = "https://github.com/Quasar-Flash/bigid-bgcheck-ruby"
+  s.metadata["bug_tracker_uri"] = "https://github.com/Quasar-Flash/bigid-bgcheck-ruby/issues"
+
+  s.add_dependency             "bigid_auth", "~> 0.1.1", ">= 0.1"
+  s.add_dependency             "faraday", "~> 1.4.1", ">= 1.0"
   s.add_dependency             "i18n", "~> 1.8.0", ">= 1.0"
   s.add_dependency             "json", "~> 2.5.0", ">= 2.0"
 

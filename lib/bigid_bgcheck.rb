@@ -22,6 +22,9 @@ require "bigid/bgcheck/result"
 require "bigid/bgcheck/result_code"
 require "bigid/bgcheck/request"
 
+I18n.load_path += Dir[File.join(__dir__, "locales", "**/*.yml")]
+I18n.reload! if I18n.backend.initialized?
+
 module Bigid
   module Bgcheck
     SRV_ENDPOINT = "backgroundcheck"
@@ -42,10 +45,5 @@ module Bigid
 
     class Configuration
     end
-
-    I18n.load_path << Dir["#{File.expand_path('config/locales')}/*.yml"]
-    I18n.config.available_locales = :en, :'pt-BR'
-    I18n.default_locale = :en
-    I18n.reload!
   end
 end
