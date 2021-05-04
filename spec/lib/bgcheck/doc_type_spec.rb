@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require "spec_helper"
-require "bigid/bgcheck/doc_type"
 
 RSpec.describe Bigid::Bgcheck::DocType do
   describe ".valid?(document_type)" do

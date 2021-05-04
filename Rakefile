@@ -45,4 +45,4 @@ rescue LoadError
   # no rspec available
 end
 
-task default: %i[rubocop ]
+task default: %i[rubocop spec]

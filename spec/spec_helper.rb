@@ -2,6 +2,8 @@
 
 require "rubygems"
 require "bundler"
+require "bigid_bgcheck"
+require "simplecov"
 
 begin
   Bundler.setup(:default, :development, :test)
@@ -11,8 +13,6 @@ rescue Bundler::BundlerError => e
 
   exit e.status_code
 end
-
-require "simplecov"
 
 SimpleCov.start do
   add_filter "spec"

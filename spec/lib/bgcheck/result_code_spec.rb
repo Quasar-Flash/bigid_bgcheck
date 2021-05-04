@@ -1,7 +1,6 @@
 # frozen_string_literal: true
 
 require "spec_helper"
-require "bigid/bgcheck/result_code"
 
 RSpec.describe Bigid::Bgcheck::ResultCode do
   describe ".valid?(code)" do
