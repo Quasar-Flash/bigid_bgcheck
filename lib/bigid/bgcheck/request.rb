@@ -47,11 +47,15 @@ module Bigid
 
           Bigid::Bgcheck::Result.new(
             approved: ResultCode.approved?(body["ResultCode"]),
-            ticket_id: body["TicketId"],
             code: body["ResultCode"],
+            score_details: body["ScoreDetails"],
+            limit_score: body["LimitScore"],
             message: body["ResultMessage"],
+            raw_data: body["RawData"],
+            raw_response: body.to_json,
+            related_score_details: body["RelatedScoreDetails"],
             score: body["Score"],
-            limit_score: body["LimitScore"]
+            ticket_id: body["TicketId"]
           )
         end
     end
