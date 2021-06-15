@@ -24,14 +24,15 @@ Installation for Rails
 -----------------
 
     # Add to the Gemfile
-    gem 'bigid_bgcheck', '~> 0.1.0'
+    gem "bigid_bgcheck", "~> 0.2"
+    gem "bigid_bgcheck", github: "Quasar-Flash/bigid-bgcheck-ruby"
 
 Setting the BigID credentials
 -----------------
 
     # Set the env variables
-    ENV['BIGID_USERNAME'] = 'your_username'
-    ENV['BIGID_PASSWORD'] = 'your_password'
+    ENV["BIGID_USERNAME"] = "your_username"
+    ENV["BIGID_PASSWORD"] = "your_password"
 
 Setting the BigID credentials - Rails Project
 -----------------
@@ -40,19 +41,19 @@ Create the config/initializers/bigid.rb file and define:
 
     # Set the env variables
     Bigid.configure do |config|
-        config.username = 'your_username'
-        config.password = 'your_password'
+        config.username = "your_username"
+        config.password = "your_password"
     end
 
 Applying a background check
 -----------------
 
-    require 'bigid_bgcheck'
+    require "bigid_bgcheck"
 
     Bigid::Bgcheck::Request.new.call(
-        document: '000.000.000-00',
-        document_type: 'CPF',
-        group: 'Default'
+        document: "000.000.000-00",
+        document_type: "CPF",
+        group: "Default"
     )
 
 Result Example
@@ -76,8 +77,8 @@ Searching the [issues](https://github.com/Quasar-Flash/bigid-bgcheck-ruby/issues
 Contributing
 -----------------
 
-- Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet;
-- Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it;
+- Check out the latest master to make sure the feature hasn"t been implemented or the bug hasn't been fixed yet;
+- Check out the issue tracker to make sure someone already hasn"t requested it and/or contributed it;
 - Fork the project;
 - Start a feature/bugfix branch;
 - Commit and push until you are happy with your contribution;
