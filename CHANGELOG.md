@@ -1,5 +1,9 @@
 # CHANGELOG for bigid_bgcheck
 
+## v0.3.0
+
+* Bump "bigid_auth" version from v0.1.0 to v0.2.0
+
 ## v0.2.0
 
 Features
