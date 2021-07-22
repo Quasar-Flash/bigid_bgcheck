@@ -2,8 +2,8 @@ BigId Background Check's Library for Ruby
 ==============
 
 [![Gem Version](https://badge.fury.io/rb/bigid_bgcheck.svg)](https://badge.fury.io/rb/bigid_bgcheck)
-[![Build Status](https://travis-ci.com/Quasar-Flash/bigid-bgcheck-ruby.svg?branch=master)](https://travis-ci.com/Quasar-Flash/bigid-bgcheck-ruby)
-[![bigid_bgcheck](https://github.com/Quasar-Flash/bigid-bgcheck-ruby/actions/workflows/ruby.yml/badge.svg)](https://github.com/Quasar-Flash/bigid-bgcheck-ruby/actions/workflows/ruby.yml)
+[![Build Status](https://travis-ci.com/Quasar-Flash/bigid_bgcheck.svg?branch=master)](https://travis-ci.com/Quasar-Flash/bigid_bgcheck)
+[![bigid_bgcheck](https://github.com/Quasar-Flash/bigid_bgcheck/actions/workflows/ruby.yml/badge.svg)](https://github.com/Quasar-Flash/bigid_bgcheck/actions/workflows/ruby.yml)
 
 Requirements
 -----------------
@@ -26,7 +26,7 @@ Installation for Rails
 
     # Add to the Gemfile
     gem "bigid_bgcheck", "~> 0.2"
-    gem "bigid_bgcheck", github: "Quasar-Flash/bigid-bgcheck-ruby"
+    gem "bigid_bgcheck", github: "Quasar-Flash/bigid_bgcheck"
 
 Setting the BigID credentials
 -----------------
@@ -73,7 +73,7 @@ Problems?
 
 **Please do not directly email any committers with questions or problems.**  A community is best served when discussions are held in public.
 
-Searching the [issues](https://github.com/Quasar-Flash/bigid-bgcheck-ruby/issues) for your problem is also a good idea.
+Searching the [issues](https://github.com/Quasar-Flash/bigid_bgcheck/issues) for your problem is also a good idea.
 
 Contributing
 -----------------
@@ -89,7 +89,7 @@ Contributing
 License
 -----------------
 
-Please see [LICENSE](https://github.com/Quasar-Flash/bigid-bgcheck-ruby/blob/master/LICENSE.txt) for licensing details.
+Please see [LICENSE](https://github.com/Quasar-Flash/bigid_bgcheck/blob/master/LICENSE.txt) for licensing details.
 
 Authors
 -----------------

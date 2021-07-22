@@ -9,7 +9,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Danilo Carolino"]
   s.email       = ["danilo.carolino@qflash.com.br"]
-  s.homepage    = "https://github.com/Quasar-Flash/bigid-bgcheck-ruby"
+  s.homepage    = "https://github.com/Quasar-Flash/bigid_bgcheck"
   s.summary     = "Bigid Background Check Library"
   s.description = "A library to use BigData Corps background check features"
   s.required_ruby_version = ">= 2.5"
@@ -17,9 +17,9 @@ Gem::Specification.new do |s|
   s.test_files = Dir["spec/**/*"]
   s.license = "MIT"
 
-  s.metadata["changelog_uri"] = "https://github.com/Quasar-Flash/bigid-bgcheck-ruby/blob/master/CHANGELOG.md"
-  s.metadata["source_code_uri"] = "https://github.com/Quasar-Flash/bigid-bgcheck-ruby"
-  s.metadata["bug_tracker_uri"] = "https://github.com/Quasar-Flash/bigid-bgcheck-ruby/issues"
+  s.metadata["changelog_uri"] = "https://github.com/Quasar-Flash/bigid_bgcheck/blob/master/CHANGELOG.md"
+  s.metadata["source_code_uri"] = "https://github.com/Quasar-Flash/bigid_bgcheck"
+  s.metadata["bug_tracker_uri"] = "https://github.com/Quasar-Flash/bigid_bgcheck/issues"
 
   s.add_dependency             "bigid_auth", "~> 0.2", ">= 0.2"
   s.add_dependency             "i18n", "~> 1.8", ">= 1.0"
