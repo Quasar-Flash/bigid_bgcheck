@@ -19,54 +19,66 @@ Included Modules
 Global Installation
 -----------------
 
-    gem install bigid_bgcheck
+```sh
+gem install bigid_bgcheck
+```
 
 Installation for Rails
 -----------------
 
-    # Add to the Gemfile
-    gem "bigid_bgcheck", "~> 0.2"
-    gem "bigid_bgcheck", github: "Quasar-Flash/bigid_bgcheck"
+```ruby
+# Add to the Gemfile
+gem "bigid_bgcheck", "~> 0.3"
+gem "bigid_bgcheck", github: "Quasar-Flash/bigid_bgcheck"
+```
 
 Setting the BigID credentials
 -----------------
 
-    # Set the env variables
-    ENV["BIGID_USERNAME"] = "your_username"
-    ENV["BIGID_PASSWORD"] = "your_password"
+```ruby
+# Set the env variables
+ENV["BIGID_USERNAME"] = "your_username"
+ENV["BIGID_PASSWORD"] = "your_password"
+```
 
 Setting the BigID credentials - Rails Project
 -----------------
 
 Create the config/initializers/bigid.rb file and define:
 
-    # Set the env variables
-    Bigid.configure do |config|
-        config.username = "your_username"
-        config.password = "your_password"
-    end
+```ruby
+# Set the env variables
+Bigid.configure do |config|
+  config.username = "your_username"
+  config.password = "your_password"
+end
+```
 
 Applying a background check
 -----------------
 
-    require "bigid_bgcheck"
+```ruby
+require "bigid_bgcheck"
 
-    Bigid::Bgcheck::Request.new.call(
-        document: "000.000.000-00",
-        document_type: "CPF",
-        group: "Default"
-    )
+Bigid::Bgcheck::Request.new.call(
+  document: "000.000.000-00",
+  document_type: "CPF",
+  group: "Default"
+)
+```
 
 Result Example
 -----------------
 
-    #<Bigid::Bgcheck::Result:0x0000560fef3c1068
-        @approved=false,
-        @ticket_id="00000000000000000",
-        @code=-1100,
-        @message="Not Approved",
-        @score=0,
-        @limit_score=0.0>
+```ruby
+#<Bigid::Bgcheck::Result:0x0000560fef3c1068
+  @approved=false,
+  @ticket_id="00000000000000000",
+  @code=-1100,
+  @message="Not Approved",
+  @score=0,
+  @limit_score=0.0>
+```
 
 Problems?
 -----------------
