@@ -1,8 +1,26 @@
 BigId Background Check's Library for Ruby
 ==============
 
+Build Status
+-----------------
+
 [![Gem Version](https://badge.fury.io/rb/bigid_bgcheck.svg)](https://badge.fury.io/rb/bigid_bgcheck)
 [![bigid_bgcheck](https://github.com/Quasar-Flash/bigid_bgcheck/actions/workflows/ruby.yml/badge.svg)](https://github.com/Quasar-Flash/bigid_bgcheck/actions/workflows/ruby.yml)
+[![Quality Gate Status](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_bigid_bgcheck&metric=alert_status&token=23b79ee0eebe63611e370ffb911d9be245c99154)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_bigid_bgcheck)
+[![Coverage](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_bigid_bgcheck&metric=coverage&token=23b79ee0eebe63611e370ffb911d9be245c99154)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_bigid_bgcheck)
+[![Maintainability Rating](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_bigid_bgcheck&metric=sqale_rating&token=23b79ee0eebe63611e370ffb911d9be245c99154)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_bigid_bgcheck)
+
+Project Scores
+-----------------
+
+[![Bugs](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_bigid_bgcheck&metric=bugs&token=23b79ee0eebe63611e370ffb911d9be245c99154)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_bigid_bgcheck)
+[![Code Smells](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_bigid_bgcheck&metric=code_smells&token=23b79ee0eebe63611e370ffb911d9be245c99154)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_bigid_bgcheck)
+[![Duplicated Lines (%)](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_bigid_bgcheck&metric=duplicated_lines_density&token=23b79ee0eebe63611e370ffb911d9be245c99154)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_bigid_bgcheck)
+[![Lines of Code](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_bigid_bgcheck&metric=ncloc&token=23b79ee0eebe63611e370ffb911d9be245c99154)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_bigid_bgcheck)
+[![Reliability Rating](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_bigid_bgcheck&metric=reliability_rating&token=23b79ee0eebe63611e370ffb911d9be245c99154)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_bigid_bgcheck)
+[![Security Rating](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_bigid_bgcheck&metric=security_rating&token=23b79ee0eebe63611e370ffb911d9be245c99154)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_bigid_bgcheck)
+[![Technical Debt](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_bigid_bgcheck&metric=sqale_index&token=23b79ee0eebe63611e370ffb911d9be245c99154)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_bigid_bgcheck)
+[![Vulnerabilities](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_bigid_bgcheck&metric=vulnerabilities&token=23b79ee0eebe63611e370ffb911d9be245c99154)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_bigid_bgcheck)
 
 Requirements
 -----------------
