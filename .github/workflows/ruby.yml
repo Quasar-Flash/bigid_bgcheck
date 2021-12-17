@@ -2,7 +2,9 @@ name: bigid_bgcheck
 
 on:
   push:
-    branches: '*'
+    branches:
+      - dev
+      - master
   pull_request:
     branches:  '*'
 
@@ -16,7 +18,7 @@ jobs:
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.0.2'
+        ruby-version: '3.0.3'
 
     - name: Run Install
       run: |
@@ -33,3 +35,16 @@ jobs:
     - name: Run Tests (rspec)
       run: |
         bundle exec rspec
+        ruby -rjson -e 'sqube = JSON.load(File.read("coverage/.resultset.json"))["RSpec"]["coverage"].transform_values {|lines| lines["lines"]}; total = { "RSpec" => { "coverage" => sqube, "timestamp" => Time.now.to_i }}; puts JSON.dump(total).gsub("/home/runner/work/bigid_bgcheck/bigid_bgcheck/","/github/workspace/")' > coverage/.resultset.solarqube.json
+
+    - uses: sonarsource/sonarqube-scan-action@master
+      if: github.ref == 'refs/heads/master'
+      env:
+        SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
+        SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
+        # If you wish to fail your job when the Quality Gate is red, uncomment the
+        # following lines. This would typically be used to fail a deployment.
+        # - uses: sonarsource/sonarqube-quality-gate-action@master
+        #   timeout-minutes: 5
+        #   env:
+        #     SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}

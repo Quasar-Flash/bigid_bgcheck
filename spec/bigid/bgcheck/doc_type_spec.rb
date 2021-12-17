@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require "spec_helper"
-
 RSpec.describe Bigid::Bgcheck::DocType do
   describe ".valid?(document_type)" do
     subject { described_class.valid?(document_type) }

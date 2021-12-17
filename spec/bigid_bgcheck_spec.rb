@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require "spec_helper"
-
 RSpec.describe Bigid::Bgcheck do
   describe "SRV_ENDPOINT" do
     subject { defined? Bigid::Bgcheck::SRV_ENDPOINT }

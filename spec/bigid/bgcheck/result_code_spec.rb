@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require "spec_helper"
-
 RSpec.describe Bigid::Bgcheck::ResultCode do
   describe ".valid?(code)" do
     subject { described_class.valid?(code) }
