@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require "spec_helper"
-
 RSpec.describe Bigid::Bgcheck::Request do
   describe "#call" do
     let(:connection) { instance_double(Bigid::Auth::AuthenticatedConnection) }

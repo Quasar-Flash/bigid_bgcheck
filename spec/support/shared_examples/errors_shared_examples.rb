@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require "spec_helper"
-
 RSpec.shared_examples "error" do
   describe ".initialize" do
     context "when message parameter is null" do
