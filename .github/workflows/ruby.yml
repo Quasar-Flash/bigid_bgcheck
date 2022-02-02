@@ -1,15 +1,16 @@
 name: bigid_bgcheck
 
 on:
+  workflow_dispatch:
   push:
     branches:
-      - dev
       - master
   pull_request:
     branches:  '*'
 
 jobs:
   pipeline:
+    if: ${{ github.actor != 'dependabot[bot]' }}
     runs-on: ubuntu-latest
     env:
       PROJ_DIR: "/home/runner/work/bigid_bgcheck/bigid_bgcheck/"
@@ -20,7 +21,7 @@ jobs:
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.0.3'
+        ruby-version: '3.1.0'
 
     - name: Run Install
       run: |
