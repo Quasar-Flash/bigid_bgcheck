@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/Quasar-Flash/bigid_bgcheck"
   s.summary     = "Bigid Background Check Library"
   s.description = "A library to use BigData Corps background check features"
-  s.required_ruby_version = ">= 2.5"
+  s.required_ruby_version = ">= 2.7"
   s.files = Dir["{lib}/**/*"] + ["LICENSE.txt", "Rakefile", "README.md", "CHANGELOG.md"]
   s.test_files = Dir["spec/**/*"]
   s.license = "MIT"
@@ -31,9 +31,9 @@ Gem::Specification.new do |s|
   s.add_development_dependency "pry", "~> 0.14"
   s.add_development_dependency "rake", "~> 13.0", ">= 10.0.0"
   s.add_development_dependency "rspec", "~> 3.10"
-  s.add_development_dependency "rubocop", "~> 1.23"
+  s.add_development_dependency "rubocop", "~> 1.25"
   s.add_development_dependency "rubocop-packaging", "~> 0.5"
-  s.add_development_dependency "rubocop-performance", "~> 1.12"
+  s.add_development_dependency "rubocop-performance", "~> 1.13"
   s.add_development_dependency "simplecov", "~> 0.21"
   s.add_development_dependency "simplecov-json", "~> 0.2"
 end
