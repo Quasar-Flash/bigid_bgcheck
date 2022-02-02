@@ -112,9 +112,9 @@ DEPENDENCIES
   pry (~> 0.14)
   rake (~> 13.0, >= 10.0.0)
   rspec (~> 3.10)
-  rubocop (~> 1.23)
+  rubocop (~> 1.25)
   rubocop-packaging (~> 0.5)
-  rubocop-performance (~> 1.12)
+  rubocop-performance (~> 1.13)
   simplecov (~> 0.21)
   simplecov-json (~> 0.2)
 
