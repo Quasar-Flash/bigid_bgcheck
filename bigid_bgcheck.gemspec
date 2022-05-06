@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
   s.summary     = "Bigid Background Check Library"
   s.description = "A library to use BigData Corps background check features"
   s.required_ruby_version = ">= 2.7"
-  s.files = Dir["{lib}/**/*"] + ["LICENSE.txt", "Rakefile", "README.md", "CHANGELOG.md"]
+  s.files = Dir["{lib}/**/*"] + Dir["{docs}/**/*"] + ["Rakefile"]
   s.test_files = Dir["spec/**/*"]
   s.license = "MIT"
 
@@ -26,12 +26,12 @@ Gem::Specification.new do |s|
   s.add_dependency             "json", ">= 2.5", "< 2.7"
   s.add_dependency             "cpf_cnpj", "~> 0.5", ">= 0.5"
 
-  s.add_development_dependency "bundler", ">= 1.2"
+  s.add_development_dependency "bundler", "~> 2.3", ">= 2.3.0"
   s.add_development_dependency "factory_bot", "~> 6.2"
   s.add_development_dependency "pry", "~> 0.14"
   s.add_development_dependency "rake", "~> 13.0", ">= 10.0.0"
   s.add_development_dependency "rspec", "~> 3.11"
-  s.add_development_dependency "rubocop", "~> 1.25"
+  s.add_development_dependency "rubocop", "~> 1.28"
   s.add_development_dependency "rubocop-packaging", "~> 0.5"
   s.add_development_dependency "rubocop-performance", "~> 1.13"
   s.add_development_dependency "simplecov", "~> 0.21"
