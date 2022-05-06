@@ -1,9 +1,9 @@
 # CHANGELOG for bigid_bgcheck
 
-## v0.3.1.2-20220506 - [Danilo Carolino](@danilogco)
+## v0.3.1.3-20220506 - [Danilo Carolino](@danilogco)
 
 * build(deps): bump ruby version from 3.1.0 to 3.1.2
-* build(deps): bump bigid_auth version to v0.2.1.2
+* build(deps): bump bigid_auth version to v0.2.1.4
 * feat: automatize the project deployment proccess
 
 ## v0.3.1.1-20220209 - [Danilo Carolino](@danilogco)
