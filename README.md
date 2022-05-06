@@ -5,7 +5,7 @@ Build Status
 -----------------
 
 [![Gem Version](https://badge.fury.io/rb/bigid_bgcheck.svg)](https://badge.fury.io/rb/bigid_bgcheck)
-[![bigid_bgcheck](https://github.com/Quasar-Flash/bigid_bgcheck/actions/workflows/ruby.yml/badge.svg)](https://github.com/Quasar-Flash/bigid_bgcheck/actions/workflows/ruby.yml)
+[![bigid_bgcheck](https://github.com/Quasar-Flash/bigid_bgcheck/actions/workflows/build.yml/badge.svg)](https://github.com/Quasar-Flash/bigid_bgcheck/actions/workflows/build.yml)
 [![Quality Gate Status](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_bigid_bgcheck&metric=alert_status&token=23b79ee0eebe63611e370ffb911d9be245c99154)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_bigid_bgcheck)
 [![Coverage](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_bigid_bgcheck&metric=coverage&token=23b79ee0eebe63611e370ffb911d9be245c99154)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_bigid_bgcheck)
 [![Maintainability Rating](https://sonarqube.eks.qflash.com.br/api/project_badges/measure?project=Quasar-Flash_bigid_bgcheck&metric=sqale_rating&token=23b79ee0eebe63611e370ffb911d9be245c99154)](https://sonarqube.eks.qflash.com.br/dashboard?id=Quasar-Flash_bigid_bgcheck)
