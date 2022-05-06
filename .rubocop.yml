@@ -3,7 +3,7 @@ require:
   - rubocop-performance
 
 AllCops:
-  TargetRubyVersion: 3.0.1
+  TargetRubyVersion: 3.1
   # RuboCop has a bunch of cops enabled by default. This setting tells RuboCop
   # to ignore them, so only the ones explicitly set in this file are enabled.
   DisabledByDefault: true
@@ -71,6 +71,8 @@ Layout/EmptyLinesAroundModuleBody:
 # Use Ruby >= 1.9 syntax for hashes. Prefer { a: :b } over { :a => :b }.
 Style/HashSyntax:
   Enabled: true
+  EnforcedStyle: no_mixed_keys
+  EnforcedShorthandSyntax: never
 
 # Method definitions after `private` or `protected` isolated calls need one
 # extra level of indentation.
