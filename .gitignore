@@ -17,3 +17,4 @@ test/version_tmp
 tmp
 .rspec_status
 out
+report.json
