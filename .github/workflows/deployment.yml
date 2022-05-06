@@ -1,0 +1,60 @@
+name: Deployment
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+jobs:
+  Testing:
+    name: Testing
+    if: ${{ github.actor != 'dependabot[bot]' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1.2'
+      - name: Run Install
+        run: |
+          sudo apt-get -yqq install libpq-dev
+          gem update --system
+          gem install rake
+          gem install bundler
+          bundle install
+      - name: Run Linter (rubocop)
+        run: |
+          bundle exec rubocop --format json -o report.json
+      - name: Run Tests (rspec)
+        run: |
+          bundle exec rspec
+
+  Publishing:
+    needs: Testing
+    runs-on: ubuntu-latest
+    environment:
+      name: Production
+      url: https://rubygems.org/gems/bigid_bgcheck
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Set environment variables
+        id: vars
+        run: |
+          echo ::set-output name=project_version::$(ruby bin/version.rb)
+      - name: Create a GitHub release
+        uses: ncipollo/release-action@v1
+        with:
+          tag: ${{ steps.vars.outputs.project_version }}
+          name: ${{ steps.vars.outputs.project_version }}
+          bodyFile: "docs/CHANGELOG.md"
+      - name: Publish gem
+        uses: dawidd6/action-publish-gem@v1
+        with:
+          # Optional, will publish to RubyGems if specified
+          api_key: ${{secrets.RUBYGEMS_API_KEY}}
+          # Optional, will publish to GitHub Packages if specified
+          github_token: ${{secrets.GITHUB_TOKEN}}

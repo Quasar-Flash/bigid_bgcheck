@@ -46,7 +46,15 @@ Installation for Rails
 ```ruby
 # Add to the Gemfile
 gem "bigid_bgcheck", "~> 0.3"
-gem "bigid_bgcheck", github: "Quasar-Flash/bigid_bgcheck"
+```
+
+Installation using the Github Gem repo
+-----------------
+
+```ruby
+source "https://rubygems.pkg.github.com/quasar-flash" do
+  gem "bigid_bgcheck", "0.3.1"
+end
 ```
 
 Setting the BigID credentials
