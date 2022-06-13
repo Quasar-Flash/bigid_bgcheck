@@ -1,44 +1,70 @@
-# CHANGELOG for bigid_bgcheck
+# Changelog
 
-## v0.3.1.3-20220506 - [Danilo Carolino](@danilogco)
+All notable Changed to this project will be documented in this file.
 
-* build(deps): bump ruby version from 3.1.0 to 3.1.2
-* build(deps): bump bigid_auth version to v0.2.1.4
-* feat: automatize the project deployment proccess
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## v0.3.1.1-20220209 - [Danilo Carolino](@danilogco)
+## [Unreleased]
 
-* bump bigid_auth version to v0.2.1.1
+## [0.3.1.3] - 2022-05-06
 
-## v0.3.1-20220202 - [Danilo Carolino](@danilogco)
+### Added
 
-* [QC-79](https://qflash.atlassian.net/jira/software/projects/QC/boards/31?selectedIssue=QC-79)
+- feat: automatize the project deployment proccess
+
+### Changed
+
+- build(deps): bump ruby version from 3.1.0 to 3.1.2
+- build(deps): bump bigid_auth version to v0.2.1.4
+
+## [0.3.1.1] - 2022-02-09
+
+### Changed
+
+- bump bigid_auth version to v0.2.1.1
+
+## [0.3.1] - 2022-02-02
+
+### Changed
+
+- [QC-79](https://qflash.atlassian.net/jira/software/projects/QC/boards/31?selectedIssue=QC-79)
 Reduzir uso de pipelines em projetos Ruby [Dependabot]
-* Bump Ruby version to v3.1.0
+- Bump Ruby version to v3.1.0
 
-## v0.3.0 - [Danilo Carolino](@danilogco)
+## [0.3.0]
 
-* Bump "bigid_auth" version from v0.1.0 to v0.2.0
+### Changed
 
-## v0.2.0 - [Danilo Carolino](@danilogco)
+- Bump "bigid_auth" version from v0.1.0 to v0.2.0
 
-Features
+## [0.2.0]
 
-* Add fields to service return: "raw_data", "score_details", "related_score_details" and "raw_response" (the complete json file)
+### Added
 
-## v0.1.3 - [Danilo Carolino](@danilogco)
+- Add fields to service return: "raw_data", "score_details", "related_score_details" and "raw_response" (the complete json file)
 
-* Fix a problem with the locale initialization in Rails projects
+## [0.1.3]
 
-## v0.1.2 - [Danilo Carolino](@danilogco)
+### Fixed
 
-* Move auth service to an external package
+- Fix a problem with the locale initialization in Rails projects
 
-## v0.1.1 - [Danilo Carolino](@danilogco)
+## [0.1.2]
 
-* Fix a problem with the credentials when its get by the env variables
-* Fix rubocop warnings
+### Changed
 
-## v0.1.0 - [Danilo Carolino](@danilogco)
+- Move auth service to an external package
 
-* Initial release of bigid_bgcheck
+## [0.1.1]
+
+### Fixed
+
+- Fix a problem with the credentials when its get by the env variables
+- Fix rubocop warnings
+
+## [0.1.0]
+
+### Added
+
+- Initial release of bigid_bgcheck
