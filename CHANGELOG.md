@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0] - 2023-01-02
+
+### Added
+
+- Update project to run ruby v3.2.0 by @danilogco
+- Update project dependencies and tag stable release by @danilogco
+
 ## [0.3.2] - 2022-06-13
 
 ### Changed
