@@ -1,10 +1,10 @@
-FROM ruby:latest
+FROM ruby:3.2.0-bullseye
 
 WORKDIR /src
 
 COPY . .
 
-COPY Gemfile Gemfile.lock ./
+COPY Gemfile ./
 
 RUN gem install bundler
 

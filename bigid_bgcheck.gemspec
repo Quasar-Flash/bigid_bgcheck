@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.homepage    = "https://github.com/Quasar-Flash/bigid_bgcheck"
   s.summary     = "Bigid Background Check Library"
   s.description = "A library to use BigData Corps background check features"
-  s.required_ruby_version = ">= 2.7"
+  s.required_ruby_version = ">= 3.0"
   s.files = Dir["{lib}/**/*"] + Dir["{docs}/**/*"] + ["Rakefile"]
   s.test_files = Dir["spec/**/*"]
   s.license = "MIT"
@@ -21,19 +21,17 @@ Gem::Specification.new do |s|
   s.metadata["source_code_uri"] = "https://github.com/Quasar-Flash/bigid_bgcheck"
   s.metadata["bug_tracker_uri"] = "https://github.com/Quasar-Flash/bigid_bgcheck/issues"
 
-  s.add_dependency             "bigid_auth", "~> 0.2.2", ">= 0.2.0"
-  s.add_dependency             "i18n", "~> 1.8", ">= 1.0"
-  s.add_dependency             "json", ">= 2.5", "< 2.7"
+  s.add_dependency             "bigid_auth", "~> 1.0.0", ">= 0.2.2"
+  s.add_dependency             "i18n"
+  s.add_dependency             "json"
   s.add_dependency             "cpf_cnpj", "~> 0.5", ">= 0.5"
 
-  s.add_development_dependency "bundler", "~> 2.3", ">= 2.3.0"
-  s.add_development_dependency "factory_bot", "~> 6.2"
+  s.add_development_dependency "factory_bot", "~> 6.2.1"
   s.add_development_dependency "pry", "~> 0.14.1"
-  s.add_development_dependency "rake", "~> 13.0.6", ">= 10.0.0"
   s.add_development_dependency "rspec", "~> 3.12.0"
   s.add_development_dependency "rubocop", "~> 1.42.0"
-  s.add_development_dependency "rubocop-packaging", "~> 0.5.1"
-  s.add_development_dependency "rubocop-performance", "~> 1.15.0"
+  s.add_development_dependency "rubocop-packaging", "~> 0.5.2"
+  s.add_development_dependency "rubocop-performance", "~> 1.15.2"
   s.add_development_dependency "simplecov", "~> 0.22.0"
   s.add_development_dependency "simplecov-json", "~> 0.2.3"
 end

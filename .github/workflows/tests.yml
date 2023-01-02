@@ -1,5 +1,4 @@
 name: Build
-
 on:
   workflow_dispatch:
   push:
@@ -10,32 +9,24 @@ on:
       - '*'
     paths-ignore:
       - '**.md'
-
 jobs:
   Testing:
     if: ${{ github.actor != 'dependabot[bot]' }}
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
-
+      uses: actions/checkout@v3
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.1.2'
-
+        ruby-version: '3.2.0'
     - name: Run Install
       run: |
         sudo apt-get -yqq install libpq-dev
         gem update --system
-        gem install rake
-        gem install bundler
+        gem install rake bundler
         bundle install
-
     - name: Run Linter (rubocop)
-      run: |
-        bundle exec rubocop --format json -o report.json
-
+      run: bundle exec rubocop
     - name: Run Tests (rspec)
-      run: |
-        bundle exec rspec
+      run: bundle exec rspec
