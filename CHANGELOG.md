@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.1] - 2023-02-03
+
+### Changed
+
+- Adiciona workflow de deployment padronizado ao projeto por @danilogco
+- Adiciona o Ruby v3.2.0 para a matriz de testes unitários por @danilogco
+
 ## [1.0.0] - 2023-01-02
 
 ### Added

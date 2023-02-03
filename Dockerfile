@@ -1,4 +1,6 @@
-FROM ruby:3.2.0-bullseye
+FROM ruby:latest
+
+ENV TZ="America/Sao_Paulo"
 
 WORKDIR /src
 
@@ -6,9 +8,11 @@ COPY . .
 
 COPY Gemfile ./
 
+RUN gem update --system
+
 RUN gem install bundler
 
-RUN bundle install --full-index
+RUN bundle check || bundle install --full-index --jobs 6 --retry 3
 
 RUN rake install
 
