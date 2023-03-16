@@ -6,6 +6,7 @@ Build Status
 
 [![Gem Version](https://badge.fury.io/rb/bigid_bgcheck.svg)](https://badge.fury.io/rb/bigid_bgcheck)
 [![Build](https://github.com/Quasar-Flash/bigid_bgcheck/actions/workflows/tests.yml/badge.svg)](https://github.com/Quasar-Flash/bigid_bgcheck/actions/workflows/tests.yml)
+[![CodeQL](https://github.com/Quasar-Flash/bigid_bgcheck/actions/workflows/codeql.yml/badge.svg)](https://github.com/Quasar-Flash/bigid_bgcheck/actions/workflows/codeql.yml)
 
 Requirements
 -----------------
