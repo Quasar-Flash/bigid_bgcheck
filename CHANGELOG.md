@@ -1,11 +1,18 @@
 # Changelog
 
 All notable Changed to this project will be documented in this file.
-
-The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+
+## [1.1.0] - 2024-01-29
+
+### Changed
+
+- Require ruby version >= 3.1 by @danilogco
+- Ruby version < 3.1 aren't supported anymore
+- Dependencies update by @danilogco
+- Adds Ruby v3.3.0 to the unit test matrix by @danilogco
 
 ## [1.0.1] - 2023-02-03
 
@@ -49,7 +56,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 
 - [QC-79](https://qflash.atlassian.net/jira/software/projects/QC/boards/31?selectedIssue=QC-79)
-Reduzir uso de pipelines em projetos Ruby [Dependabot]
+  Reduzir uso de pipelines em projetos Ruby [Dependabot]
 - Bump Ruby version to v3.1.0
 
 ## [0.3.0]
