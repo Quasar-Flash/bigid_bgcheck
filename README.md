@@ -1,41 +1,34 @@
-BigId Background Check's Library for Ruby
-==============
+# BigId Background Check's Library for Ruby
 
-Build Status
------------------
+## Build Status
 
 [![Gem Version](https://badge.fury.io/rb/bigid_bgcheck.svg)](https://badge.fury.io/rb/bigid_bgcheck)
 [![Build](https://github.com/Quasar-Flash/bigid_bgcheck/actions/workflows/tests.yml/badge.svg)](https://github.com/Quasar-Flash/bigid_bgcheck/actions/workflows/tests.yml)
 [![CodeQL](https://github.com/Quasar-Flash/bigid_bgcheck/actions/workflows/codeql.yml/badge.svg)](https://github.com/Quasar-Flash/bigid_bgcheck/actions/workflows/codeql.yml)
 
-Requirements
------------------
+## Requirements
 
 - Ruby: Any version
 - Bundler
 
-Included Modules
------------------
+## Included Modules
 
 - [bigid-auth-ruby](https://github.com/Quasar-Flash/bigid-auth-ruby) - BigID API authentication module
 
-Global Installation
------------------
+## Global Installation
 
 ```sh
 gem install bigid_bgcheck
 ```
 
-Installation for Rails
------------------
+## Installation for Rails
 
 ```ruby
 # Add to the Gemfile
 gem "bigid_bgcheck", "~> 0.3"
 ```
 
-Installation using the Github Gem repo
------------------
+## Installation using the Github Gem repo
 
 ```ruby
 source "https://rubygems.pkg.github.com/quasar-flash" do
@@ -43,8 +36,7 @@ source "https://rubygems.pkg.github.com/quasar-flash" do
 end
 ```
 
-Setting the BigID credentials
------------------
+## Setting the BigID credentials
 
 ```ruby
 # Set the env variables
@@ -52,8 +44,7 @@ ENV["BIGID_USERNAME"] = "your_username"
 ENV["BIGID_PASSWORD"] = "your_password"
 ```
 
-Setting the BigID credentials - Rails Project
------------------
+## Setting the BigID credentials - Rails Project
 
 Create the config/initializers/bigid.rb file and define:
 
@@ -65,8 +56,7 @@ Bigid.configure do |config|
 end
 ```
 
-Applying a background check
------------------
+## Applying a background check
 
 ```ruby
 require "bigid_bgcheck"
@@ -78,8 +68,7 @@ Bigid::Bgcheck::Request.new.call(
 )
 ```
 
-Result Example
------------------
+## Result Example
 
 ```ruby
 #<Bigid::Bgcheck::Result:0x0000560fef3c1068
@@ -91,15 +80,13 @@ Result Example
   @limit_score=0.0>
 ```
 
-Problems?
------------------
+## Problems?
 
-**Please do not directly email any committers with questions or problems.**  A community is best served when discussions are held in public.
+**Please do not directly email any committers with questions or problems.** A community is best served when discussions are held in public.
 
 Searching the [issues](https://github.com/Quasar-Flash/bigid_bgcheck/issues) for your problem is also a good idea.
 
-Contributing
------------------
+## Contributing
 
 - Check out the latest master to make sure the feature hasn"t been implemented or the bug hasn't been fixed yet;
 - Check out the issue tracker to make sure someone already hasn"t requested it and/or contributed it;
@@ -109,12 +96,10 @@ Contributing
 - Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.;
 - Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
 
-License
------------------
+## License
 
 Please see [LICENSE](https://github.com/Quasar-Flash/bigid_bgcheck/blob/master/LICENSE.txt) for licensing details.
 
-Authors
------------------
+## Authors
 
 Danilo Carolino, [@danilogco](https://github.com/danilogco) / [@Quasar-Flash](https://github.com/Quasar-Flash)
